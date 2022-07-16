@@ -1,0 +1,14 @@
+import React from "react";
+
+interface Props {
+  className?: string;
+  display?: string;
+  flexDirection?: string;
+  alignItems?: string;
+  maxWidth?: string;
+  margin?: string;
+  children?: React.ReactNode;
+}
+export const PageItemWrapper = ({ className, children }: Props) => {
+  return <div className={className}>{children}</div>;
+};
